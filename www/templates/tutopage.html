@@ -1,5 +1,5 @@
-<ion-view title="{{title}}">
-    <ion-content ng-controller="DbCtrl" scroll="false" class="padding">
+<ion-view view-title="Blalva">
+    <ion-content scroll="false" class="padding" ng-controller="DbCtrlAdd">
         <div class="list">
             <label class="item item-input">
                 <input type="text" placeholder="Nom tuto" ng-model="tutoName">
@@ -12,13 +12,13 @@
                     Catégories
                 </div>
                 <select ng-model="tutoCategorie">
-                    <option>Cusine</option>
-                    <option selected>Bricolage</option>
+                    <option Selected>Cusine</option>
+                    <option>Bricolage</option>
                     <option>Sport</option>
                 </select>
             </label>
-            <button class="button button-block button-positive" ng-click="savaTuto()" ng-repeat="tuto in tutos">
-                <i class="ion-checkmark-round"></i> Publier {{tuto.id}}
+            <button class="button button-block button-positive" ng-click="savaTuto()">
+                <i class="ion-checkmark-round"></i> Publier
             </button>
         </div>
     </ion-content>
