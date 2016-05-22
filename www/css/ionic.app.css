@@ -9843,3 +9843,8 @@ a.button {
 
 .bricolage {
   background-image: url("../img/bricolage.jpg"); }
+
+.errors {
+  color: #ef473a;
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  font-weight: 200; }

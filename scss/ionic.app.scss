@@ -70,3 +70,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   background-image: url("../img/bricolage.jpg");
 
 }
+
+//errors
+.errors{
+  color: $assertive;
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  font-weight: 200;
+}

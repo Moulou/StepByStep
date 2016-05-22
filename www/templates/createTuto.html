@@ -1,21 +1,24 @@
 <ion-view view-title="Créer un Tutoriel">
     <ion-content scroll="false" ng-controller="DbCtrlAdd">
-        <div class="list">
+        <form name="tutoForm" novalidate>
+            <div class="list">
             <label class="item item-input">
-                <input type="text" placeholder="Nom du tutoriel" ng-model="tutoName">
+                <input type="text" placeholder="Nom du tutoriel" ng-model="tutoName"
+                       name="tutoName" ng-minlength="5" required>
             </label>
-            <label class="item item-input item-select">
+            <label class="item item-input item-select" >
                 <div class="input-label">
                     Choisir la catégorie
                 </div>
-                <select ng-model="tutoCategorie">
+                <select ng-model="tutoCategorie" name="categ" required>
                     <option Selected>Cusine</option>
                     <option>Bricolage</option>
                     <option>Sport</option>
                 </select>
             </label>
             <label class="item item-input">
-                <textarea placeholder="Description" ng-model="tutoDescription" cols="10" rows="10"></textarea>
+                <textarea placeholder="Description" ng-model="tutoDescription" cols="10" rows="10"
+                name="description" required ng-minlength="10"></textarea>
             </label>
             <div class="padding">
                 <button class="button button-block button-positive" ng-click="savaTuto()">
@@ -23,5 +26,13 @@
                 </button>
             </div>
         </div>
+            <div class="padding">
+                <p class="errors" ng-show="tutoForm.tutoName.$error.required">* Le nom du tutoriel est demandé</p>
+                <p class="errors" ng-show="tutoForm.categ.$error.required">* Le choix d'une catégorie est obligatoire</p>
+                <p class="errors" ng-show="tutoForm.description.$error.required">* Une description est demandée</p>
+                <p class="errors" ng-show="tutoForm.description.$error.minlength">* La description doit contenir plus de 10 caractères</p>
+
+            </div>
+        </form>
     </ion-content>
 </ion-view>
