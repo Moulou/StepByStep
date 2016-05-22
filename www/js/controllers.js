@@ -11,4 +11,40 @@ angular.module('starter.controllers', [])
 
 })
 
+.controller('DbCtrl', function($scope) {
+        $scope.myData = new Firebase("https://incandescent-fire-3734.firebaseio.com/Tutos");
+        $scope.myDataId = new Firebase("https://incandescent-fire-3734.firebaseio.com/Id");
+
+        $scope.tutos = {};
+
+        $scope.idCat = 1;
+
+        $scope.higherID = 2;
+
+        $scope.myDataId.update({
+            id:$scope.higherID
+        });
+
+        $scope.myDataId.on('value', function(snapshot) {
+            $scope.tutos = snapshot.val();
+            $scope.$apply();
+        });
+        console.log($scope.tutos.id);
+
+        $scope.savaTuto = function() {
+            $scope.myData.push({
+                Id:$scope.idCat,
+                Name:$scope.tutoName,
+                Description:$scope.tutoDescription,
+                Categorie:$scope.tutoCategorie
+            });
+            $scope.tutoName = "";
+            $scope.tutoDescription = "";
+            $scope.myDataId.update({
+                id:$scope.higherID
+            });
+        };
+
+    });
+
 

@@ -56,7 +56,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/home',
       views: {
         'menuContent': {
-          templateUrl: 'templates/home.html',
+          templateUrl: 'templates/home.html'
         }
       }
     })
@@ -65,10 +65,19 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: '/cuisine',
     views: {
       'menuContent': {
-        templateUrl: 'templates/cuisine.html',
+        templateUrl: 'templates/cuisine.html'
       }
     }
-  });
+  })
+
+      .state('app.tutopage', {
+        url: '/tutopage',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/tutopage.html'
+          }
+        }
+      });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/home');
+  $urlRouterProvider.otherwise('/app/tutopage');
 });
