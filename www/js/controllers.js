@@ -21,8 +21,8 @@ angular.module('starter.controllers', [])
 
         $scope.savaTuto = function() {
             $scope.myDataId.on('value', function(snapshot) {
-                $scope.higherID = snapshot.val().id + 1;
                 $scope.$apply();
+                $scope.higherID = snapshot.val().id + 1;
             });
             if($scope.tutoCategorie == "Sport") {
                 $scope.myDataS.push({
