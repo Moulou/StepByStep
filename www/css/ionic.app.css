@@ -9819,30 +9819,43 @@ a.button {
   height: 100vh; }
 
 .categ a {
-  text-decoration: none; }
+  text-decoration: none;
+  height: 100%;
+  width: 100%; }
 
 .categ h2 {
-  color: white;
   font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
-  font-weight: 200; }
+  font-weight: 100;
+  padding-left: 10%; }
 
 .two {
-  height: 33vh;
   padding: 0;
   margin: 0; }
 
 .sport, .food, .bricolage {
   background-size: cover;
-  width: 100%; }
+  width: 100%;
+  height: 33vh;
+  display: flex;
+  align-items: center; }
 
 .food {
   background-image: url("../img/food.jpg"); }
 
+.food h2 {
+  color: black; }
+
 .sport {
   background-image: url("../img/sport.jpg"); }
 
+.sport h2 {
+  color: #ffc900; }
+
 .bricolage {
   background-image: url("../img/bricolage.jpg"); }
+
+.bricolage h2 {
+  color: white; }
 
 .errors {
   color: #ef473a;
