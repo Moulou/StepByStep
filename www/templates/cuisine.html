@@ -1,34 +1,11 @@
 <ion-view view-title="Cuisine">
-  <ion-content>
+  <ion-content  scroll="false" ng-controller="DbCtrlCuisine">
     <div class="list">
-
-      <a class="item item-thumbnail-left" href="#" ng-repeat="">
-        <img src="img/food.jpg">
-        <h2>Recettes du saumon</h2>
-        <p>Nine Inch Nails</p>
+      <a class="item item-thumbnail-left" href="#" ng-repeat="tuto in tutos">
+        <img src="img/sport.jpg">
+        <h2>{{tuto.Name}}</h2>
+        <p>{{tuto.Description}}</p>
       </a>
-      <a class="item item-thumbnail-left" href="#">
-        <img src="img/food.jpg">
-        <h2>Recettes du saumon</h2>
-        <p>Nine Inch Nails</p>
-      </a>
-      <a class="item item-thumbnail-left" href="#">
-        <img src="img/food.jpg">
-        <h2>Recettes du saumon</h2>
-        <p>Nine Inch Nails</p>
-      </a>
-      <a class="item item-thumbnail-left" href="#">
-        <img src="img/food.jpg">
-        <h2>Recettes du saumon</h2>
-        <p>Nine Inch Nails</p>
-      </a>
-      <a class="item item-thumbnail-left" href="#">
-        <img src="img/food.jpg">
-        <h2>Recettes du saumon</h2>
-        <p>Nine Inch Nails</p>
-      </a>
-
-
     </div>
   </ion-content>
 </ion-view>

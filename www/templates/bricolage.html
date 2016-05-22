@@ -1,29 +1,9 @@
 <ion-view view-title="Bricolage">
-  <ion-content>
-    <a class="item item-thumbnail-left" href="#">
-      <img src="img/bricolage.jpg">
-      <h2>Fabriquer un porte clé</h2>
-      <p>Nine Inch Nails</p>
-    </a>
-    <a class="item item-thumbnail-left" href="#">
-      <img src="img/food.jpg">
-      <h2>Recettes du saumon</h2>
-      <p>Nine Inch Nails</p>
-    </a>
-    <a class="item item-thumbnail-left" href="#">
-      <img src="img/food.jpg">
-      <h2>Recettes du saumon</h2>
-      <p>Nine Inch Nails</p>
-    </a>
-    <a class="item item-thumbnail-left" href="#">
-      <img src="img/food.jpg">
-      <h2>Recettes du saumon</h2>
-      <p>Nine Inch Nails</p>
-    </a>
-    <a class="item item-thumbnail-left" href="#">
-      <img src="img/food.jpg">
-      <h2>Recettes du saumon</h2>
-      <p>Nine Inch Nails</p>
+  <ion-content  scroll="false" ng-controller="DbCtrlBricolage">
+    <a class="item item-thumbnail-left" href="#" ng-repeat="tuto in tutos">
+      <img src="img/sport.jpg">
+      <h2>{{tuto.Name}}</h2>
+      <p>{{tuto.Description}}</p>
     </a>
   </ion-content>
 </ion-view>

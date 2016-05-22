@@ -56,7 +56,10 @@ angular.module('starter.controllers', [])
 
     .controller('DbCtrlCuisine', function($scope) {
 
-        $scope.myDataC.on('value', function(snapshot) {
+        $scope.myDataS = new Firebase("https://incandescent-fire-3734.firebaseio.com/Tutos/Cuisine");
+        $scope.tutos = {};
+
+        $scope.myDataS.on('value', function(snapshot) {
             $scope.tutos = snapshot.val();
             $scope.$apply();
         });
@@ -69,7 +72,6 @@ angular.module('starter.controllers', [])
 
         $scope.myDataS.on('value', function(snapshot) {
             $scope.tutos = snapshot.val();
-            console.log($scope.tutos);
             $scope.$apply();
         });
 
@@ -77,7 +79,10 @@ angular.module('starter.controllers', [])
 
     .controller('DbCtrlBricolage', function($scope) {
 
-        $scope.myDataB.on('value', function(snapshot) {
+        $scope.myDataS = new Firebase("https://incandescent-fire-3734.firebaseio.com/Tutos/Bricolage");
+        $scope.tutos = {};
+
+        $scope.myDataS.on('value', function(snapshot) {
             $scope.tutos = snapshot.val();
             $scope.$apply();
         });
