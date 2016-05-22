@@ -1,6 +1,6 @@
 {
   "name": "StepByStep",
-  "app_id": "",
+  "app_id": "7cda85a1",
   "gulpStartupTasks": [
     "sass",
     "watch"
