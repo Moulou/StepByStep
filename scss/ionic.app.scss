@@ -30,7 +30,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 }
 
-.prehome h1, h4{
+.prehome h1, h3{
   font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 200;
   text-align: center;
@@ -41,12 +41,20 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .prehome h1{
   padding-top: 40%;
 }
+
+.btnadd{
+  color: $energized;
+}
+
 .btn{
   position:center;
   text-align: center;
-  margin-left: 33%;
+  margin-left: 10%;
   margin-top: 10%;
 }
+
+
+
 //home
 .categ{
   height: 100vh;

@@ -9820,7 +9820,7 @@ a.button {
   background-image: url("../img/group.jpg");
   background-size: cover; }
 
-.prehome h1, h4 {
+.prehome h1, h3 {
   font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   font-weight: 200;
   text-align: center;
@@ -9829,10 +9829,13 @@ a.button {
 .prehome h1 {
   padding-top: 40%; }
 
+.btnadd {
+  color: #ffc900; }
+
 .btn {
   position: center;
   text-align: center;
-  margin-left: 33%;
+  margin-left: 10%;
   margin-top: 10%; }
 
 .categ {
