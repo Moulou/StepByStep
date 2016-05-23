@@ -62,10 +62,16 @@ angular.module('starter.controllers', [])
         $scope.myDataS = new Firebase("https://incandescent-fire-3734.firebaseio.com/Tutos/Cuisine");
         $scope.tutos = {};
 
+        $scope.idTuto;
+
         $scope.myDataS.on('value', function(snapshot) {
             $scope.tutos = snapshot.val();
             $scope.$apply();
         });
+
+        $scope.single = function(id) {
+            $scope.idTuto = id;
+        };
     })
 
     .controller('DbCtrlSport', function($scope) {

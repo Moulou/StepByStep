@@ -79,6 +79,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+      .state('app.pageTuto', {
+        url: '/pageTuto',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/pageTuto.html'
+          }
+        }
+      })
+
   .state('app.prehomme', {
     url: '/prehome',
     views: {
