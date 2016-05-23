@@ -1,7 +1,7 @@
 <ion-view view-title="Cuisine">
   <ion-content  scroll="true" ng-controller="DbCtrlCuisine">
     <div class="list">
-      <a class="item item-thumbnail-left" ui-sref="pageTuto" ng-repeat="tuto in tutos" ng-click="single({{tuto.Id}})">
+      <a class="item item-thumbnail-left" href="#/app/pageTuto" ng-repeat="tuto in tutos" ng-click="single({{tuto.Id}})">
         <img src="img/food.jpg">
         <h2>{{tuto.Name}}</h2>
         <p>{{tuto.Description}}</p>

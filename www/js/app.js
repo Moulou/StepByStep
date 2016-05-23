@@ -83,7 +83,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/pageTuto',
         views: {
           'menuContent': {
-            templateUrl: 'templates/pageTuto.html'
+            templateUrl: 'templates/pageTuto.html',
+            parent : "/cuisine"
           }
         }
       })
