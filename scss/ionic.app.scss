@@ -23,8 +23,30 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 //Emilie
 
+.prehome{
+  height:100vh;
+  background-image: url('../img/group.jpg');
+  background-size: cover;
 
+}
 
+.prehome h1, h4{
+  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  font-weight: 200;
+  text-align: center;
+  color: white;
+
+}
+
+.prehome h1{
+  padding-top: 40%;
+}
+.btn{
+  position:center;
+  text-align: center;
+  margin-left: 33%;
+  margin-top: 10%;
+}
 //home
 .categ{
   height: 100vh;
